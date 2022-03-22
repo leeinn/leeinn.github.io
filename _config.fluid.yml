@@ -61,13 +61,13 @@ code:
 
       # 是否根据 style 改变代码背景色（如果 style 是深色背景别忘了开启此项）
       # If true, the code background will change color based on the style (If style has a dark background, don't forget to true)
-      bg_color: false
+      bg_color: true
 
     prismjs:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
       # Select the style button on the right side of the link page, you can also set the CSS link
       # See: https://prismjs.com/
-      style: "default"
+      style: "Tomorrow Night"
 
       # 设为 true 高亮将本地静态生成（并只支持部分 prismjs 插件），设为 false 高亮将在浏览器通过 js 生成
       # If true, it will be generated locally (but some prismjs plugins are not supported). If false, it will be generated via JS in the browser
@@ -96,7 +96,7 @@ fun_features:
   # 为文章内容中的标题添加锚图标
   # Add an anchor icon to the title on the post page
   anchorjs:
-    enable: true
+    enable: false
     element: h1,h2,h3,h4,h5,h6
     placement: right
     # Options: hover | always | touch
@@ -120,7 +120,7 @@ dark_mode:
   # 默认的选项（当用户手动切换后则不再按照默认模式），选择 `auto` 会优先遵循 prefers-color-scheme，其次按用户本地时间 18 点到次日 6 点之间进入暗色模式
   # Default option (when the visitor switches manually, the default mode is no longer followed), choosing `auto` will give priority to prefers-color-scheme, and then enter the dark mode from 18:00 to 6:00 in the visitor’s local time
   # Options: auto | light | dark
-  default: auto
+  default: dark
 
 # 主题颜色配置，其他不生效的地方请使用自定义 css 解决，配色可以在下方链接中获得启发
 # Theme color, please use custom CSS to solve other colors, color schema can be inspired by the links below
@@ -200,7 +200,7 @@ font:
 
 # 指定自定义 .js 文件路径，支持列表；路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
-custom_js: [/js/darkTheme.js, /js/test.js]
+custom_js: 
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
@@ -298,7 +298,7 @@ iconfont: //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
 navbar:
   # 导航栏左侧的标题，为空则按 hexo config 中 `title` 显示
   # The title on the left side of the navigation bar. If empty, it is based on `title` in hexo config
-  blog_title: "Lee"
+  blog_title: "Lee's Blog"
 
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
@@ -321,7 +321,7 @@ navbar:
     # - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     # - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     # - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    # - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
@@ -437,7 +437,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://blog-img-1309919152.cos.ap-nanjing.myqcloud.com/banner/banner%E5%A4%B4%E5%9B%BE.jpg
+  banner_img: https://blog-img-1309919152.cos.ap-nanjing.myqcloud.com/banner/banner%E5%A4%B4%E5%9B%BE.jpg?imageMogr2/format/webp
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -509,7 +509,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://blog-img-1309919152.cos.ap-nanjing.myqcloud.com/banner/%E6%96%87%E7%AB%A0%E5%A4%B4%E5%9B%BE.jpg
+  banner_img: https://blog-img-1309919152.cos.ap-nanjing.myqcloud.com/banner/%E6%96%87%E7%AB%A0%E5%A4%B4%E5%9B%BE.jpg?imageMogr2/format/webp
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
