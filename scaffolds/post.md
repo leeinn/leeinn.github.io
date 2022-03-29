@@ -2,6 +2,6 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-excerpt: 
-index_img: 
+excerpt: 改描述
+index_img: themes\fluid\source\img\default.png
 ---
